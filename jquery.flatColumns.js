@@ -1,5 +1,5 @@
 /*!
-* jQuery.tabNavigator
+* jQuery.flatColumns
 *
 * @version beta
 * @author Kazuhito Shiba <kazuhito_shiba@qript.co.jp>
