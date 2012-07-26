@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flat Columns</title>
+<style>
+h1{
+	text-align:center;
+	margin:0 0 30px;
+}
+#sample:after,
+#sample2:after,
+#sample3:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+#sample,
+#sample2,
+#sample3{
+	width:960px;
+	margin: 20px auto;
+	text-align:center;
+}
+
+#sample li{
+	list-style-type:none;
+	width:400px;
+	float:left;
+	margin:0 20px 20px;
+	border:2px solid #09F;
+}
+
+#sample li li{
+	border:2px solid #063;
+	width:auto;
+}
+
+#sample2 li{
+	list-style-type:none;
+	width:250px;
+	float:left;
+	margin:0 20px 20px;
+	border:2px solid #C66;
+}
+
+#sample2 li a{
+	display:block;
+}
+
+#sample3 li{
+	list-style-type:none;
+	width:180px;
+	float:left;
+	margin:0 20px 20px;
+	border:2px solid #693;
+}
+
+#sample3 li a{
+	display:block;
+}
+
+</style>
+</head>
+
+<body>
+<div id="contents">
+	<h1>Flat Columns</h1>
+	<ul id="sample">
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+		<li>ｆｄさｆｊｋｄさｊｆｋｌｄ；あｓｊｆｋｄぁｓ；ｆｄさｆｊｋｄさｊｆｋｌｄ；あｓｊｆｋｄぁｓ；ｆｄさｆｊｋｄさｊｆｋｌｄ；あｓｊｆｋｄぁｓ；ｆｄさｆｊｋｄさｊｆｋｌｄ；あｓｊｆｋｄぁｓ；</li>
+		<li>E</li>
+		<li>F<ul>
+			<li>ｆｊｄｓかｌ；ｊｆｄｋさ；ｆｊｄｋさ；ｆｊｄｋさｌ；</li>
+		</ul></li>
+	</ul>
+	
+	<ul id="sample2">
+		<li><a href="#">ｆｄさｆｊｋｄさｊｆｋｌｄ；あｓｊｆｋｄぁｓ；</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">6</a></li>
+		<li><a href="#">7</a></li>
+		<li><a href="#">8</a></li>
+		<li><a href="#">9</a></li>
+		<li><a href="#">あああああああああああああああああああああああああああああああああああああああああああああああ</a></li>
+		<li><a href="#">11</a></li>
+		<li><a href="#">12</a></li>
+		<li><a href="#">13</a></li>
+		<li><a href="#">14</a></li>
+		<li><a href="#">15</a></li>
+		<li><a href="#">16</a></li>
+		<li><a href="#">17</a></li>
+		<li><a href="#">18</a></li>
+		<li><a href="#">19</a></li>
+	</ul>
+	
+	<ul id="sample3">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">6</a></li>
+		<li><a href="#">あああああああああああああああああああああああああああああああああああああああああああああああ</a></li>
+		<li><a href="#">8</a></li>
+		<li><a href="#">9</a></li>
+		<li><a href="#">10</a></li>
+		<li><a href="#">11</a></li>
+		<li><a href="#">12</a></li>
+		<li><a href="#">13</a></li>
+		<li><a href="#">14</a></li>
+		<li><a href="#">15</a></li>
+		<li><a href="#">16</a></li>
+		<li><a href="#">17</a></li>
+		<li><a href="#">18</a></li>
+		<li><a href="#">19</a></li>
+		<li><a href="#">20</a></li>
+	</ul>
+</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.flatColumns.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#sample').flatColumns({
+		'column' : 2
+	});
+	$('#sample2').flatColumns({
+		'child':'a',
+		'column': 3
+	});
+	$('#sample3').flatColumns({
+		'child':'a',
+		'column': 4
+	});
+});
+</script>
+</body>
+</html>
